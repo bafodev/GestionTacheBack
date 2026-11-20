@@ -20,7 +20,7 @@ Collaboration.belongsTo(Task, {foreignKey: 'taskId'});
 Task.hasMany(Collaboration, {foreignKey: 'taskId'});
 User.hasMany(Collaboration, {foreignKey: 'userId'});
 
-export default {
+export {
     db, 
     Task,
     User, 
